@@ -294,7 +294,7 @@ namespace Serial_Communication
                     buff = buff.Replace("0X", string.Empty);
                     buff = buff.Replace(" ", string.Empty);
 
-                    for (int i = 0; i < (buff.Length - buff.Length % 2) / 2; i++)   //
+                    for (int i = 0; i < (buff.Length - buff.Length % 2) / 2; i++)   //遍历并且排除输入字符个数为奇数的可能性
                     {
                         try
                         {
